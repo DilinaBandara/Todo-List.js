@@ -81,31 +81,22 @@ form button:hover {
 
 .trash-btn, 
 .complete-btn {
-    color: white;
+    color: black;
     border: none;
-    padding: 1rem;
+    padding: 7px;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
-.complete-btn {
+.complete-btn, .complete-btn{
     background: rgb(255, 200, 0);
 }
 
-.trash-btn {
-    border-top-right-radius: 1.75rem;
-    border-bottom-right-radius: 1.75rem;
-    background: rgb(171, 171, 171);
-}
 
 .todo-item {
     padding: 0rem 0.5rem;
 }
 
-.fa-trash, 
-.fa-check-circle {
-    pointer-events: none;
-}
 
 .completed {
     text-decoration: line-through;
@@ -154,4 +145,34 @@ select {
 .select::hover::after {
     background: white;
     color: rgb(255, 200, 0);
+}
+
+.todo-container{
+    margin-top: 25px;
+}
+
+li{
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 22px;
+    color: black;
+    padding-left: 30px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.complete-btn, .trash-btn{
+    margin-right: 10px;
+    border-radius: 50px;
+    float: right;
+}
+
+.completed-tasks{
+    text-decoration: line-through;
+    color: #888;
+}
+
+.deleted{
+    display: none;
 }
